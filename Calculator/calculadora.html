@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" 
+    href="https://fonts.gstatic.com" crossorigin><link 
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" 
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f952c16866.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="calculadora.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+           
+                <div class="display">
+                    <input type="text" name="display" id="display">
+                </div>
+
+                <div>
+                    <input type="button" value="AC" onclick="display.value = '' " class="operator">
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0, -1) " class="operator">
+                    <input type="button" value="." onclick="display.value += '.' " class="operator">
+                    <input type="button" value="/" onclick="display.value += '/' " class="operator">
+                </div>
+
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7' ">
+                    <input type="button" value="8" onclick="display.value += '8' ">
+                    <input type="button" value="9" 
+                    onclick="display.value += '9' ">
+                    <input type="button" value="*" onclick="display.value += '*' ">
+                </div>
+
+                <div>
+                    <input type="button" value="4"
+                    onclick="display.value += '4' ">
+                    <input type="button" value="5" onclick="display.value += '5' ">
+                    <input type="button" value="6"
+                    onclick="display.value += '6' ">
+                    <input type="button" value="-" onclick="display.value += '-' ">
+                </div>
+
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1' ">
+                    <input type="button" value="2" onclick="display.value += '2' ">
+                    <input type="button" value="3" onclick="display.value += '3' ">
+                    <input type="button" value="+" onclick="display.value += '+' ">
+                </div>
+
+                <div>
+                    <input type="button" value="00" onclick="display.value += '00' ">
+                    <input type="button" value="0" onclick="display.value += '0' ">
+                    <input type="button" class="equal" value="=" onclick="display.value = eval(display.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="images">
+        <svg width="1072" height="1024" viewBox="0 0 1072 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1078.5L18.5 824L242 697.5L372.5 463.5L580 530.5L671.5 351.5L822.5 276L952.5 135.5L1095 -4.5L1140 435L1152 848.5L1130 1072L0 1078.5Z" fill="url(#paint0_linear_82_3)"/>
+            <defs>
+            <linearGradient id="paint0_linear_82_3" x1="576" y1="370" x2="590.5" y2="1320.5" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF0303"/>
+            <stop offset="1" stop-color="#0085FF"/>
+            </linearGradient>
+            </defs>
+            </svg>            
+    </div>
+    <div class="images1">
+        <svg width="569" height="598" viewBox="0 0 569 598" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="143" cy="172" r="426" fill="url(#paint0_linear_83_7)"/>
+            <defs>
+            <linearGradient id="paint0_linear_83_7" x1="143" y1="40.6205" x2="155.134" y2="788.359" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF0303"/>
+            <stop offset="1" stop-color="#0085FF"/>
+            </linearGradient>
+            </defs>
+            </svg>
+            
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="calculadora.js"></script>
+</body>
+</html>
