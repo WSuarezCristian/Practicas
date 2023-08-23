@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(125deg, #242424, #F9F9ED);
+}
+
+.contenedor {
+	max-width: 90%;
+	width: 400px;
+	margin: 80px auto;
+    padding: 20px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 30px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 2;
+}
+
+.fondo .circulo-1 {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(45deg, #686D93, #D9DBF1);
+    top: 40px;
+    left: 40%;
+    border-radius: 100%;
+    z-index: -100;
+}
+
+.fondo .circulo-2 {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(120deg, #686D93, #D9DBF1);
+    bottom: 10px;
+    left: 28%;
+    border-radius: 100%;
+    z-index: -1000000;
+}
+
+.formulario input[type='text'] {
+    padding: 20px;
+	border: none;
+	background: #fff;
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	font-size: 20px;
+	margin-bottom: 20px;
+    z-index: 100000;
+}
+
+.formulario .btn {
+    width: 200px;
+    max-width: 100%;
+    margin: 0 75px;
+    background: linear-gradient(45deg, #7D84B2, #8E9DCC,#D9DBF1);
+    color: #000;
+    border: 0.5px solid #000;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .3s ease-in;
+    font-weight: 600;
+    z-index: 10000000;
+}
+
+.formulario .btn:hover {
+	background: #F9F9ED;
+}
+
+.contenedorQR {
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+    z-index: 10000000;
+}
