@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+
+.navbar-nav {
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    border-bottom: 1px solid #cacaca;
+    box-shadow: 0px 10px 20px #cacaca;
+}
+
+nav ul  {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.icono-ps {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+
+
+
+/* PRESENTACION TAMAÑO ====================================== >>>>>>>>>>>>>>>>>>>> */
+
+.presentacion {
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+
+/* PRESENTACION DESCRIPCION*/
+
+
+.presentacion-ps5 {
+    position: relative;
+    width: 600px;
+}
+
+
+.presentacion-ps5 h2 {
+    font-size: 35px;
+    width: 450px;
+    border-bottom: 1px solid #0011ff;
+}
+
+.presentacion-ps5 h1 {
+    font-size: 60px;
+    color: #0011ff;
+}
+
+.presentacion-ps5 p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #7e7e7e;
+}
+
+.presentacion-ps5 .btn {
+    border: none;
+    outline: none;
+    padding: 10px 50px;
+    border-radius: 10px;
+    background: linear-gradient(120deg, #cacaca, #0011ff);
+    color: #000000;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+
+/* IMG PS5 ==================================================> */
+
+ .img-dualps5 {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    z-index: 5;
+}
+
+.img-dualps5 img {
+    width: 400px;
+    height: 400px;
+    z-index: 5;
+    filter: drop-shadow(0px 0px 20px #707070);
+}
+
+.img-dualps5 .color1 {
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 250px;
+    background: transparent;
+    border: 10px solid #000000;
+    border-radius: 100%;
+    top: 200px;
+    right: 200px;
+    z-index: -1;
+}
+
+.img-dualps5 .color2 {
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 250px;
+    background: transparent;
+    border: 10px solid #0011ff;
+    border-radius: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    
+}
+
+
+
+
+
+
+
+
+
+/* AMBAS PS5 =========================================================> */
+
+
+.ps5 {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+}
+
+/* AMBAS PS5 - FONDO ==================================> */
+
+
+.ps5 .triangulo1 {
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    height: 300px;
+    top: 150px;
+    left: 50px;
+}
+
+.ps5 .triangulo2 {
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    height: 300px;
+    bottom: -100px;
+    right: 100px;
+    transform: rotate(120deg);
+}
+
+
+.ps5 .fondo-blur {
+    position: absolute;
+    content: '';
+    width: 600px;
+    height: 600px;
+    background: #0011ff;
+    top: -300px;
+    right: 100px;
+    border-radius: 100%;
+    filter: blur(300px);
+}
+
+.ps5 .fondo-blur2 {
+    position: absolute;
+    content: '';
+    width: 600px;
+    height: 600px;
+    background: #000000;
+    bottom: -800px;
+    left: 100px;
+    border-radius: 100%;
+    filter: blur(300px);
+}
+
+
+/* AMBAS PS5 - TARJETAS ======================================== >>>>>>>>>>>>>>>> */
+
+.ps5 .ambasps5 {
+    font-size: 50px;
+    color: #000000;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    z-index: 2;
+}
+
+
+.ps5 .box-ambasps5 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    z-index: 2;
+}
+
+
+
+.ps5 .box-ambasps5 .ps5_1 {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    transition: 1s ease-in-out;
+    background: rgba( 255, 255, 255, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-weight: 500;
+    z-index: 2;
+}
+
+.ps5 .box-ambasps5 .ps5_1:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.ps5 .box-ambasps5 .ps5_1:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+
+}
+
+
+
+
+/* PS5 icono */
+
+.ps5 .box-ambasps5 .ps5_1 .icono-card1 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 60px;
+    color: #00000093;
+}
+
+.ps5 .box-ambasps5 .ps5_1 .icono-card2 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 60px;
+    color: #00000093;
+}
+
+
+/* PS5 imagen */
+
+.ps5 .box-ambasps5 .ps5_1 img {
+    width: 400px;
+    height: 400px;
+    padding: 30px 0px;
+}
+
+
+.ps5 .box-ambasps5 .ps5_1 h2 {
+    margin-top: 20px;
+    color: #000000;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.ps5 .box-ambasps5 .ps5_1 .icono-carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #888888;
+    border: none;
+    border-radius: 30px;
+    gap: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.ps5 .box-ambasps5 .ps5_1 .icono-carrito i {
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #cacaca, #0011ff);
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+
+.ps5 .box-ambasps5 .ps5_1 .icono-carrito span {
+    color: #000000;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.ps5 .box-ambasps5 .bar {
+    position: relative;
+    content: '';
+    width: 5px;
+    height: 500px;
+    border-radius: 10px;
+    background: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PS5 DUALSENSE */ 
+
+.dualps5 {
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.dualps5 .dual-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin-right: 100px;
+    z-index: 10;
+}
+
+.dualps5 .dual-img img {
+    position: relative;
+    width:700px;
+    height: 400px;
+    transform: rotate(-20deg);
+    filter: drop-shadow(0px 0px 20px #707070);
+    z-index: 10;
+}
+
+
+.dualps5 .dual-img .color4 {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: 100px;
+    left: 100px;
+    background: transparent;
+    border: 10px solid #0011ff;
+    width: 300px;
+    height: 300px;
+}
+
+.dualps5 .dual-img .color5 {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: 120px;
+    left: 120px;
+    background: transparent;
+    border: 10px solid #000000;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+.presentacion-dualps5 h1  {
+    color: #000000;
+    font-size: 60px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #0011ff;
+    z-index: 2;
+}
+
+.presentacion-dualps5 .pr1 {
+    color: #7e7e7e;
+    font-weight: 400;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ACCESORIOS */
+
+.accesorios-ps5 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 120px 100px;
+    background: #000
+}
+
+
+.accesorios-ps5 .mas {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.accesorios-ps5 .box-accesorios {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.accesorios-ps5 .box-accesorios .box1 {
+    width: 370px;
+    height: 550px;
+    background: linear-gradient( #0011ffb6, #d1d1d1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px #474747;
+    transition: 0.5s ease-in-out;
+}
+
+
+.accesorios-ps5 .box-accesorios .box1:hover {
+    transform: scale(1.05);
+}
+
+
+.accesorios-ps5 .box-accesorios .box1 img {
+    width: 370px;
+    height: 300px;
+    background: #000000;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+.accesorios-ps5 .box-accesorios .box1 .texto-acc {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+
+.accesorios-ps5 .box-accesorios .box1 .texto-acc h3 {
+    padding: 10px;
+    color: #000000;
+    font-size: 22px;
+
+}
+
+.accesorios-ps5 .box-accesorios .box1 .texto-acc p {
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+.accesorios-ps5 .box-accesorios .box1 .texto-acc .accesorio {
+    color: #090909;
+    padding: 10px 40px;
+    font-size: 15px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+}
+
+
+.accesorios-ps5 .box-accesorios .box1 .texto-acc .accesorio:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+
+
+.accesorios-ps5 .cr-acc1 {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    background: #ffffff;
+    width: 10px;
+    height: 400px;
+    transform: rotate(135deg);
+}
+
+.accesorios-ps5 .cr-acc2 {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    background: #ffffff;
+    width: 10px;
+    height: 400px;
+    transform: rotate(-135deg);
+}
+
+.accesorios-ps5 .cr-acc3 {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 230px;
+    background: #0011ff;
+    width: 10px;
+    height: 400px;
+    transform: rotate(135deg);
+}
+
+.accesorios-ps5 .cr-acc4 {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 230px;
+    background: #0011ff;
+    width: 10px;
+    height: 400px;
+    transform: rotate(-135deg);
+}
+
+.accesorios-ps5 .cr-acc5 {
+    content: '';
+    position: absolute;
+    bottom: 60px;
+    left: 100px;
+    background: #ffffff;
+    width: 10px;
+    height: 600px;
+    transform: rotate(135deg);
+}
+
+.accesorios-ps5 .cr-acc6 {
+    content: '';
+    position: absolute;
+    bottom: 60px;
+    left: 100px;
+    background: #ffffff;
+    width: 10px;
+    height: 600px;
+    transform: rotate(-135deg);
+}
+
+.accesorios-ps5 .cr-acc7 {
+    content: '';
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    background: #0011ff;
+    width: 10px;
+    height: 600px;
+    transform: rotate(135deg);
+}
+
+.accesorios-ps5 .cr-acc8 {
+    content: '';
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    background: #0011ff;
+    width: 10px;
+    height: 600px;
+    transform: rotate(-135deg);
+}
+
+
+
+
